@@ -46,34 +46,36 @@
                 android:id="@+id/topDrawerLayout">
 
 
-
-
             </LinearLayout>
 
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycalview"
-                android:layout_height="300sp"
+
+                android:layout_height="@dimen/_200sdp"
+
+
                 android:layout_width="match_parent"
                     android:background="#37000000"
                />
 
-            <androidx.recyclerview.widget.RecyclerView
-                    android:background="#00000000"
-                android:id="@+id/recycalview2"
-                android:layout_height="300sp"
+            <com.marcinmoskala.arcseekbar.ArcSeekBar
+                android:layout_width="300dp"
+                android:id="@+id/seekbar"
+                android:layout_gravity="center"
+                android:layout_height="150dp" />
 
-                android:layout_width="match_parent"
-                />
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycalview3"
-                android:layout_height="300sp"
-
-                android:layout_width="match_parent"
-                />
         </LinearLayout>
+            <ImageView
+        android:id="@+id/up_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        app:layout_anchor="@+id/bottomSheet"
+        app:layout_anchorGravity="top|center" />
 
     </FrameLayout>
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
